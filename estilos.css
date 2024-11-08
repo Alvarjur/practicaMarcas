@@ -6,15 +6,33 @@ body{
 .sticky-bar {
     background-color: #bb0c0c;
     color: white;
-    padding: 10px;
+    padding: 0px;
     text-align: center;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 0;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 
+.header-txt {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+#titulo{
+    font-size: 34px;
+    text-align: center;
+    background-color: #bb0c0c;
+}
+
+#contenedor{
+    background-color: #bb0c0c;
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 500px;
+    float: left;
+}
 @keyframes cambiarColorFondo {
     0% {background-color: rgb(16, 134, 170);}
     50% {background-color: rgb(0, 162, 255);}
