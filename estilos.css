@@ -1,40 +1,131 @@
-body{
-    background-color: aqua;
-    animation: cambiarColorFondo 4s infinite;
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
+body {
+    
+    color: #333;
+    line-height: 1.6;
+    animation: cambiarColorFondo 8s infinite alternate;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra de navegación sticky */
 .sticky-bar {
-    background-color: #bb0c0c;
+    background-color: #ff3f34;
     color: white;
-    padding: 0px;
     text-align: center;
     position: sticky;
     top: 0;
-    z-index: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+    z-index: 10;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .header-txt {
-    font-size: 24px;
+    font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
-
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
-#titulo{
-    font-size: 34px;
+
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+header a:hover {
+    background-color: #d32f2f;
+}
+
+/* Sección de título */
+#titulo {
+    margin: 20px 0;
     text-align: center;
-    background-color: #bb0c0c;
 }
 
-#contenedor{
-    background-color: #bb0c0c;
-    font-size: 26px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 500px;
-    float: left;
+#shinchan-image {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 600px;
+    height: auto;
+    transition: transform 0.5s;
 }
+
+#shinchan-image:hover {
+    transform: scale(1.05);
+}
+
+/* Main Section */
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+/* Estilo de secciones */
+.section {
+    background-color: #ff6f61;
+    font-size: 24px;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.section:hover {
+    transform: scale(1.02);
+}
+
+/* Estilo de personajes y productos */
+.personaje, .producto {
+    display: inline-block;
+    margin: 15px;
+    text-align: center;
+}
+
+.personaje-img, .producto-img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.personaje-img:hover, .producto-img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    padding: 15px;
+    border-top: 2px solid #ff3f34;
+    margin-top: 20px;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Animación de fondo */
 @keyframes cambiarColorFondo {
-    0% {background-color: rgb(16, 134, 170);}
-    50% {background-color: rgb(0, 162, 255);}
-    100% {background-color: rgb(16, 134, 170);}
+    0% {background-color: #e98796;}
+    50% {background-color: #75d6d6;}
+    100% {background-color: #e98796;}
 }
